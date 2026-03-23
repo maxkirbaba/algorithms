@@ -7,7 +7,7 @@ for _ in range(m):
     events.append((lastp + 1, -1))
 
 events.sort()
-print(events)
+
 prev = 0
 free = 0
 under_vision = 0

@@ -3,8 +3,8 @@ count_segments, count_points = map(int, input().split())
 events = []
 for _ in range(count_segments):
     start, finish = map(int, input().split())
-    # if start > finish:
-    #     start, finish = finish, start
+    if start > finish:
+        start, finish = finish, start
     events.append((start, -1))
     events.append((finish, 1))
 
